@@ -3,7 +3,7 @@
 ## Under construction
 
 <p align="center">
-  <p>Main Results</p>   <img width="150" src="https://raw.githubusercontent.com/marcelowds/fasr/main/fasr_results.png">
+  <p>Main Results</p>   <img width="500" src="https://raw.githubusercontent.com/marcelowds/fasr/main/fasr_results.png">
 </p>
 
 ## Citation
