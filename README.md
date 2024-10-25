@@ -35,17 +35,21 @@ The algorithm receives images in tfrecords format that can be generated using [P
 
 In the ```sample_imgs/tfrecords``` folder there is a sample of 10 images from the CelebA dataset.
 
-Adjust the path in the file ```configs/ve/sr_ve.py```.
-
 ## Adaface 
 
 Download the R18 CASIA-WebFace feature extractor from [Adaface](https://github.com/mk-minchul/AdaFace?tab=readme-ov-file) [here](https://drive.google.com/file/d/1BURBDplf2bXpmwOL1WVzqtaVmQl9NpPe/view) and place it in the ```pretrained_adaface``` directory.
 
-Adjust the path in the file ```configs/ve/sr_ve.py```.
-
 ## Pre-trained FASR model
 
-Download our pre-trained model HERE and place it in the ```exps/checkpoints-meta``` directory.
+Download our pre-trained model [HERE](https://drive.google.com/file/d/1fPV0w2XR-svCjqkgKnOU9qpRq6GYgnpL/view?usp=drive_link) and place it in the ```exps/checkpoints-meta``` directory.
+
+## Sample images and feature extraction
+
+In ```sample_images```, you will find a sample of images, with gallery images in ```gallery```, low-resolution images used for feature extraction in ```LR_imgs```, probe images in high resolution in ```probe_HR```, and reference low-resolution images used for super-resolution in ```probe_LR```.
+
+For the calculation of the mean feature, use ```features_extract.py```. Save the features in ```sample_imgs/features```.
+
+Adjust settings and path in files ```config/default_ve_configs.py``` and ```configs/ve/sr_ve.py```.
 
 ## Generate SR images
 
