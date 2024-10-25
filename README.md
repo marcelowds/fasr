@@ -1,6 +1,5 @@
 # Multi-Feature Aggregation in Diffusion Models for Enhanced Face Super-Resolution
 
-## Under construction
 
 <figure>
   <img src="https://raw.githubusercontent.com/marcelowds/fasr/main/fasr_results.png" style="width: 100%; max-width: 1000px;">
@@ -31,11 +30,30 @@ Activate conda environment
 ## Tfrecords
 
 The algorithm receives images in tfrecords format that can be generated using [Progressive Growing of GANs](https://github.com/tkarras/progressive_growing_of_gans) using:
+
 ``` python dataset_tool.py create_from_images tfrecords_path images_path --shuffle 0 ```
 
-In the sample_imgs/tfrecords folder there is a sample of 10 images from the CelebA dataset.
+In the ```sample_imgs/tfrecords``` folder there is a sample of 10 images from the CelebA dataset.
 
-Adjust settings and paths in files ```config/default_ve_configs.py``` and ```configs/ve/sr_ve.py```.
+Adjust the path in the file ```configs/ve/sr_ve.py```.
+
+## Adaface 
+
+Download the R18 CASIA-WebFace feature extractor from [Adaface](https://github.com/mk-minchul/AdaFace?tab=readme-ov-file) [here](https://drive.google.com/file/d/1BURBDplf2bXpmwOL1WVzqtaVmQl9NpPe/view) and place it in the ```pretrained_adaface``` directory.
+
+Adjust the path in the file ```configs/ve/sr_ve.py```.
+
+## Pre-trained FASR model
+
+Download our pre-trained model HERE and place it in the ```exps/checkpoints-meta``` directory.
+
+## Generate SR images
+
+```CUDA_VISIBLE_DEVICES=0 python3 main.py --config 'configs/ve/sr_ve.py' --mode 'sr' --workdir exps```
+
+## Train a new model
+
+```CUDA_VISIBLE_DEVICES=0 python3 main.py --config 'configs/ve/sr_ve.py' --mode 'train' --workdir exps```
 
 ## Citation
 * DOS SANTOS, Marcelo et al. "Multi-Feature Aggregation in Diffusion Models for Enhanced Face Super-Resolution." In: *2024 37th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)*. IEEE, 2024. p. 1-6. [[IEEE Xplore]](https://ieeexplore.ieee.org/abstract/document/10716316) [[arXiv]](https://arxiv.org/pdf/2408.15386)
