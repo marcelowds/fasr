@@ -1,0 +1,10 @@
+## GENERATE TFRECORDS FILES
+python dataset_tool.py create_from_images tfrecords_path images_path --shuffle 0
+
+# TRAIN
+CUDA_VISIBLE_DEVICES=0 python3 main.py --config 'configs/ve/sr_ve.py' --mode 'train' --workdir exps
+
+# SR GENERATION
+CUDA_VISIBLE_DEVICES=0 python3 main.py --config 'configs/ve/sr_ve.py' --mode 'sr' --workdir exps
+
+
