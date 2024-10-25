@@ -12,6 +12,22 @@ dataset. FASR outperforms baseline methods, preserving facial symmetry and natur
 
 This project was built using a fork of [Score-SDE](https://github.com/yang-song/score_sde) and [SDE-SR](https://github.com/marcelowds/sr-sde).
 
+## Prepare conda environment 
+
+```conda create -n fasr python=3.8.2```
+
+Install requirements
+
+```pip3 install -r requirements.txt```
+
+Also install jax+cuda
+
+```pip install --upgrade jax==0.2.8 jaxlib==0.1.59+cuda110 -f https://storage.googleapis.com/jax-releases/jax_releases.html```
+
+Activate conda environment
+
+```conda activate fasr```
+
 ## Citation
 * DOS SANTOS, Marcelo et al. "Multi-Feature Aggregation in Diffusion Models for Enhanced Face Super-Resolution." In: *2024 37th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)*. IEEE, 2024. p. 1-6. [[IEEE Xplore]](https://ieeexplore.ieee.org/abstract/document/10716316) [[arXiv]](https://arxiv.org/pdf/2408.15386)
 
