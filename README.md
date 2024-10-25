@@ -3,7 +3,7 @@
 ##  Overview of the proposed method.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/marcelowds/fasr/main/fasr_results.png" style="width: 100%; max-width: 1000px;">
+  <img src="https://raw.githubusercontent.com/marcelowds/fasr/main/fasr.png" style="width: 100%; max-width: 1000px;">
   <figcaption align="center">Fig 1: The low-resolution images LR₁, ..., LRₙ are used to compute a set of features F₁, ..., Fₙ, respectively, which are then combined to generate Fₘ. The low-resolution image LR₀ is integrated with Fₘ in the diffusion model to produce a super-resolution (SR) image. The SR image is subsequently compared with a set of images from the gallery for face recognition.</figcaption>
 </figure>
 
