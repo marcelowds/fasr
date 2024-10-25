@@ -28,6 +28,15 @@ Activate conda environment
 
 ```conda activate fasr```
 
+## Tfrecords
+
+The algorithm receives images in tfrecords format that can be generated using [Progressive Growing of GANs](https://github.com/tkarras/progressive_growing_of_gans) using:
+``` python dataset_tool.py create_from_images tfrecords_path images_path --shuffle 0 ```
+
+In the sample_imgs/tfrecords folder there is a sample of 10 images from the CelebA dataset.
+
+Adjust settings and paths in files ```config/default_ve_configs.py``` and ```configs/ve/sr_ve.py```.
+
 ## Citation
 * DOS SANTOS, Marcelo et al. "Multi-Feature Aggregation in Diffusion Models for Enhanced Face Super-Resolution." In: *2024 37th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI)*. IEEE, 2024. p. 1-6. [[IEEE Xplore]](https://ieeexplore.ieee.org/abstract/document/10716316) [[arXiv]](https://arxiv.org/pdf/2408.15386)
 
