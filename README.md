@@ -1,5 +1,64 @@
 # Multi-Feature Aggregation in Diffusion Models for Enhanced Face Super-Resolution
 
+## teste
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison Results</title>
+  
+  <!-- MathJax for LaTeX rendering -->
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+
+    figure {
+      margin: 20px auto;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Comparison Results</h2>
+
+  <figure>
+    <img src="https://raw.githubusercontent.com/marcelowds/fasr/main/fasr.png" style="width: 100%; max-width: 1000px;">
+    <figcaption>
+      Fig 1: Comparison of low-resolution (LR), super-resolution (SR) results obtained by various methods, 
+      and ground truth (GT) images from the Quis-Campi dataset.  
+      FASR outperforms baseline methods, preserving facial symmetry and natural appearance.
+    </figcaption>
+  </figure>
+
+  <p>
+    The low-resolution images \( \text{LR}_1, \dots, \text{LR}_N \) are used to compute a set of features 
+    \( \mathbf{F}_1, \dots, \mathbf{F}_N \), respectively, which are then combined to generate \( \mathbf{F}_M \).  
+    The low-resolution image \( \text{LR}_0 \) is integrated with \( \mathbf{F}_M \) in the diffusion model to produce a 
+    super-resolution (SR) image.  
+    The SR image is subsequently compared with a set of images from the gallery for face recognition.
+  </p>
+
+</body>
+</html>
+
+
+## teste
 
 <figure>
   <img src="https://raw.githubusercontent.com/marcelowds/fasr/main/fasr_results.png" style="width: 100%; max-width: 1000px;">
