@@ -2,10 +2,11 @@
 
 ## Under construction
 
-<p align="center">
-  <p>Main Results</p>
+<figure>
   <img src="https://raw.githubusercontent.com/marcelowds/fasr/main/fasr_results.png" style="width: 100%; max-width: 1000px;">
-</p>
+  <figcaption align="center">Figure 1: Main Results</figcaption>
+</figure>
+
 
 
 ## Citation
