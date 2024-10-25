@@ -51,7 +51,7 @@ Download the R18 CASIA-WebFace feature extractor from [Adaface](https://github.c
 
 ## Pre-trained FASR model
 
-Download our pre-trained model [HERE](https://drive.google.com/file/d/1fPV0w2XR-svCjqkgKnOU9qpRq6GYgnpL/view?usp=drive_link) and place it in the ```exps/checkpoints-meta``` directory.
+Download our pre-trained model [here](https://drive.google.com/file/d/1fPV0w2XR-svCjqkgKnOU9qpRq6GYgnpL/view?usp=drive_link) and place it in the ```exps/checkpoints-meta``` directory.
 
 ## Sample images and feature extraction
 
