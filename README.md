@@ -8,7 +8,7 @@
 dataset. FASR outperforms baseline methods, preserving facial symmetry and natural appearance.</figcaption>
 </figure>
 
-<br>
+<br><br>
 
 This project was built using a fork of [Score-SDE](https://github.com/yang-song/score_sde) and [SDE-SR](https://github.com/marcelowds/sr-sde).
 
