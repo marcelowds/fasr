@@ -39,7 +39,7 @@ Activate conda environment
 
 ## Tfrecords
 
-The algorithm receives images in tfrecords format that can be generated using [Progressive Growing of GANs](https://github.com/tkarras/progressive_growing_of_gans) using:
+The algorithm processes images in TFRecords format, which can be generated using [Progressive Growing of GANs](https://github.com/tkarras/progressive_growing_of_gans) using:
 
 ``` python dataset_tool.py create_from_images tfrecords_path images_path --shuffle 0 ```
 
