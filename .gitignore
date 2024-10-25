@@ -1,0 +1,5 @@
+pretrained_adaface/adaface_ir18_casia.ckpt
+exps/checkpoints-meta/checkpoint.pth
+**/__pycache__/
+*.pyc
+*.pyo
