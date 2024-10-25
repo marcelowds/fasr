@@ -4,7 +4,8 @@
 
 <figure>
   <img src="https://raw.githubusercontent.com/marcelowds/fasr/main/fasr_results.png" style="width: 100%; max-width: 1000px;">
-  <figcaption align="center">Figure 1: Main Results</figcaption>
+  <figcaption align="center">Comparison of low-resolution (LR), super-resolution (SR) results obtained by various methods, and ground gruth (GT) images from the Quis-Campi
+dataset. FASR outperforms baseline methods, preserving facial symmetry and natural appearance.</figcaption>
 </figure>
 
 
