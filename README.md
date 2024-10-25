@@ -1,9 +1,6 @@
-<h1 style="text-align: center;">Multi-Feature Aggregation in Diffusion Models for Enhanced Face Super-Resolution</h1>
-
-This project demonstrates the use of multi-feature aggregation within diffusion models to improve the quality of face super-resolution. The approach leverages low-resolution images combined with advanced feature extraction for better recognition performance.
-
-
 # Multi-Feature Aggregation in Diffusion Models for Enhanced Face Super-Resolution
+
+This project introduces a super-resolution algorithm using diffusion models, combining a low-resolution image with features from multiple low-quality images. It achieves high-quality outputs with minimized distortions in identity and delivers state-of-the-art results on CelebA and Quis-Campi datasets.
 
 ##  Overview of the proposed method.
 
